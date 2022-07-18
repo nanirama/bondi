@@ -197,17 +197,17 @@ Lawn care  </div>
     
   
  
-  <input class="sm:w-75 w-1/4 h-1  bg-black rounded-lg appearance-none cursor-pointer dark:bg-gray-700" type="range" x-model="total_value" min="0" max="100" step="5"/>
+  <input className="sm:w-75 w-1/4 h-1  bg-black rounded-lg appearance-none cursor-pointer dark:bg-gray-700" type="range" x-model="total_value" min="0" max="100" step="5"/>
 
 
      <p className='text-xs'>4.8</p></div>
-    <div className='flex justify-between text-gray-700 items-center'><p className='text-sm'>Criteria 2 </p> <input class="sm:w-75 w-1/4 h-1  bg-black rounded-lg appearance-none cursor-pointer dark:bg-gray-700" type="range" x-model="total_value" min="0" max="100" step="5"/> <p className='text-xs'>4.8</p></div>
-    <div className='flex justify-between text-gray-700 items-center'><p className='text-sm'>Criteria 3 </p> <input class="sm:w-75 w-1/4 h-1  bg-black rounded-lg appearance-none cursor-pointer dark:bg-gray-700" type="range" x-model="total_value" min="0" max="100" step="5"/><p className='text-xs'>4.8</p></div>
+    <div className='flex justify-between text-gray-700 items-center'><p className='text-sm'>Criteria 2 </p> <input className="sm:w-75 w-1/4 h-1  bg-black rounded-lg appearance-none cursor-pointer dark:bg-gray-700" type="range" x-model="total_value" min="0" max="100" step="5"/> <p className='text-xs'>4.8</p></div>
+    <div className='flex justify-between text-gray-700 items-center'><p className='text-sm'>Criteria 3 </p> <input className="sm:w-75 w-1/4 h-1  bg-black rounded-lg appearance-none cursor-pointer dark:bg-gray-700" type="range" x-model="total_value" min="0" max="100" step="5"/><p className='text-xs'>4.8</p></div>
 </div>
 <div className='flex flex-col w-full gap-y-2'>
-    <div className='flex justify-between text-gray-700 items-center'><p className='text-sm'>Criteria 4 </p> <input class="sm:w-75 w-1/4 h-1  bg-black rounded-lg appearance-none cursor-pointer dark:bg-gray-700" type="range" x-model="total_value" min="0" max="100" step="5"/><p className='text-xs'>4.8</p></div>
-    <div className='flex justify-between text-gray-700 items-center'><p className='text-sm'>Criteria 5 </p> <input class="sm:w-75 w-1/4 h-1  bg-black rounded-lg appearance-none cursor-pointer dark:bg-gray-700" type="range" x-model="total_value" min="0" max="100" step="5"/> <p className='text-xs'>4.8</p></div>
-    <div className='flex justify-between text-gray-700 items-center'><p className='text-sm'>Criteria 6 </p>  <input class="sm:w-75 w-1/4 h-1  bg-black rounded-lg appearance-none cursor-pointer dark:bg-gray-700" type="range" x-model="total_value" min="0" max="100" step="5"/><p className='text-xs'>4.8</p></div>
+    <div className='flex justify-between text-gray-700 items-center'><p className='text-sm'>Criteria 4 </p> <input className="sm:w-75 w-1/4 h-1  bg-black rounded-lg appearance-none cursor-pointer dark:bg-gray-700" type="range" x-model="total_value" min="0" max="100" step="5"/><p className='text-xs'>4.8</p></div>
+    <div className='flex justify-between text-gray-700 items-center'><p className='text-sm'>Criteria 5 </p> <input className="sm:w-75 w-1/4 h-1  bg-black rounded-lg appearance-none cursor-pointer dark:bg-gray-700" type="range" x-model="total_value" min="0" max="100" step="5"/> <p className='text-xs'>4.8</p></div>
+    <div className='flex justify-between text-gray-700 items-center'><p className='text-sm'>Criteria 6 </p>  <input className="sm:w-75 w-1/4 h-1  bg-black rounded-lg appearance-none cursor-pointer dark:bg-gray-700" type="range" x-model="total_value" min="0" max="100" step="5"/><p className='text-xs'>4.8</p></div>
 </div>
 </div>
 
