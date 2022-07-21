@@ -12,6 +12,8 @@ import Photo from "../assets/images/photo1.png"
 import Map from "../assets/images/map.png"
 import Avatar from "../assets/images/avatar.png"
 
+import ImgLoader from '../components/Image';
+
 
 export default function Home() {
   return (
