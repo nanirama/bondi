@@ -5,7 +5,7 @@ const nextConfig = {
   assetPrefix: isProd ? 'https://sites.trady.com' : '',
   images: {
     loader: "imgix",
-    path: isProd ? '/' : process.env.NEXT_PUBLIC_FRONTEND_URL,
+    path: isProd ? '' : process.env.NEXT_PUBLIC_FRONTEND_URL,
   }
 }
 
