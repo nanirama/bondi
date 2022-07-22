@@ -11,3 +11,5 @@ body{font-family: 'Inter', sans-serif;}
 .abtimg span img {width:100% !important;}
 .abtimg img span {width:100% !important;}
 .abtimg img {width:100% !important;}
+
+.border3{ border:2em solid blue;}

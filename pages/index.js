@@ -13,6 +13,7 @@ import Photo from "../assets/images/photo1.png"
 import Map from "../assets/images/map.png"
 import Avatar from "../assets/images/avatar.png"
 import VideoModal from '../components/videomodal'
+import Timer from "../components/timer";
 
 export default function Home() {
   const [showModal, setShowModal] = React.useState(false);
@@ -64,7 +65,6 @@ export default function Home() {
             Lawn care  </div>
 
         </div>
-
         <h2 className='text-black text-2xl font-semibold mb-2.5'>Selected work</h2>
         <div className='flex gap-2 mb-10'>
           <Image src={Video1} alt="" onClick={() => setShowModal(true)}/>
@@ -75,10 +75,11 @@ export default function Home() {
           ): null}
 
         </div>
+
         <h2 className='text-black text-2xl font-semibold mb-2.5'>About us</h2>
         <p className='mb-6'>Proudly Serving Western Wisconsin & Eastern Minnesota. Whether you are just looking for a lawn company to cut your grass so you don’t have to or you need a qualified and seasoned lawn care professional to bring your lawn to life, F</p>
         <div className='border text-sm p-2.5 w-full font-medium text-gray-600 text-center text-sm mb-6 rounded-md  sm:w-72 w-full'>
-          <Link href="http://localhost:3000/aboutus">About Us</Link>
+          <Link href="/aboutus">About Us</Link>
         </div>
         <h2 className='text-black text-2xl font-semibold mb-4'>About us</h2>
         <ul>

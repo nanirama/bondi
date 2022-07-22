@@ -1,24 +1,29 @@
 import React from "react";
 import Image from 'next/image'
 
+import Timer from "./timer";
+
 import PopupImg from "../assets/images/popup-img.png"
 import AbtmobileLogo from "../assets/images/abt-mobilelogo.png"
 
 const VideoModal=({setShowModal})=> {
-    console.log('setShowModal',setShowModal)
     return (
-        <>
+        <>            
             <div
                 className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
-                <div className="absolute top-0 right-0 left-0 w-full">
-                    <div className="relative w-100 mx-auto">
+                <div className="absolute top-0 right-0 left-0 w-full bg-black">
+                    <div className="relative w-100 max-w-xl mx-auto">
                         <div className="flex flex-col w-full">
                             <div className="flex items-start justify-between relative w-100">
                                 <div className="w-100 relative mx-auto">
                                     <div className="w-full abtimg">
                                         <Image src={PopupImg} alt="" className="w-full h-100" />
+                                        
                                     </div>
-                                    <div className="absolute top-0 -left-2"><Image src={AbtmobileLogo} alt="" width="240" height="70" /></div>
+                                    <div className="absolute top-0 -left-2">
+                                        <Image src={AbtmobileLogo} alt="" width="240" height="70" />
+                                        <Timer setShowModal={setShowModal}/>
+                                    </div>
                                     <button
                                         className="text-white float-right text-base absolute top-7 right-2 leading-none font-semibold outline-none focus:outline-none"
                                         onClick={() => setShowModal(false)}
@@ -27,6 +32,7 @@ const VideoModal=({setShowModal})=> {
                                     </button>
                                 </div>
                             </div>
+                            
                             <div className="bg-black text-zinc-300 w-full text-sm text-center leading-6 pt-8 px-8 pb-20 -mt-2">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean feugiat diam sed tellus viverra faucibus. Nulla vestibulum justo ante, at pulvinar justo
 
