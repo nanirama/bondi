@@ -1,6 +1,7 @@
 import React from "react";
 import Head from 'next/head'
 import Image from 'next/image'
+import { useRouter } from 'next/router'
 import Layout from "../components/layout"
 import Link from 'next/link'
 
@@ -17,6 +18,8 @@ import Timer from "../components/timer";
 
 export default function Home() {
   const [showModal, setShowModal] = React.useState(false);
+  const router = useRouter()
+  console.log('router.pathname',router.pathname)
   return (
     <Layout>
       <div className='w-full flex flex-col'>
@@ -79,7 +82,7 @@ export default function Home() {
         <h2 className='text-black text-2xl font-semibold mb-2.5'>About us</h2>
         <p className='mb-6'>Proudly Serving Western Wisconsin & Eastern Minnesota. Whether you are just looking for a lawn company to cut your grass so you don’t have to or you need a qualified and seasoned lawn care professional to bring your lawn to life, F</p>
         <div className='border text-sm p-2.5 w-full font-medium text-gray-600 text-center text-sm mb-6 rounded-md  sm:w-72 w-full'>
-          <Link href="/aboutus">About Us</Link>
+          <Link href={`${router.pathname}aboutus`}>About Us</Link>
         </div>
         <h2 className='text-black text-2xl font-semibold mb-4'>About us</h2>
         <ul>
