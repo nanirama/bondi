@@ -7,33 +7,33 @@ const Timer = ({setShowModal}) => {
     const [ minutes, setMinutes ] = useState(initialMinute);
     const [seconds, setSeconds ] =  useState(initialSeconds);
     const [ barWidth, setBarWidth ] = useState(0);
-    useEffect(()=>{
+    // useEffect(()=>{
         
-        console.log('barWidth',barWidth)
-    let myInterval = setInterval(() => {
-            if (seconds > 0) {
-                setSeconds(seconds - 1);
-                let bwidth = parseInt(Math.round((100/(initialSeconds/seconds))))
-                setBarWidth(bwidth)
-            }
-            if (seconds === 0) {
-                if (minutes === 0) {
-                    clearInterval(myInterval)
-                } else {
-                    setMinutes(minutes - 1);
-                    setSeconds(59);
-                }
-                setShowModal(false)
-                let bwidth = 0
-                setBarWidth(bwidth)
-            } 
+    //     console.log('barWidth',barWidth)
+    // let myInterval = setInterval(() => {
+    //         if (seconds > 0) {
+    //             setSeconds(seconds - 1);
+    //             let bwidth = parseInt(Math.round((100/(initialSeconds/seconds))))
+    //             setBarWidth(bwidth)
+    //         }
+    //         if (seconds === 0) {
+    //             if (minutes === 0) {
+    //                 clearInterval(myInterval)
+    //             } else {
+    //                 setMinutes(minutes - 1);
+    //                 setSeconds(59);
+    //             }
+    //             setShowModal(false)
+    //             let bwidth = 0
+    //             setBarWidth(bwidth)
+    //         } 
             
             
-        }, 1000)
-        return ()=> {
-            clearInterval(myInterval);            
-          };
-    },[barWidth]);
+    //     }, 1000)
+    //     return ()=> {
+    //         clearInterval(myInterval);            
+    //       };
+    // },[barWidth]);
     const mywidth = 75
 
     return (

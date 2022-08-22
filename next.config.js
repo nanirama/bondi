@@ -1,12 +1,21 @@
 const isProd = process.env.NODE_ENV === 'production'
 const nextConfig = {
-  reactStrictMode: true,
+  assetPrefix: process.env.NEXT_PUBLIC_FRONTEND_URL,
+  reactStrictMode: false,
   swcMinify: true,
-  assetPrefix: isProd ? 'https://sites.trady.com' : '',
   images: {
     loader: "imgix",
-    path: isProd ? '' : process.env.NEXT_PUBLIC_FRONTEND_URL,
-  }
+    path: '',
+  },
+  webpack(config) {
+    config.module.rules.push({
+      test: /\.svg$/i,
+      issuer: /\.[jt]sx?$/,
+      use: ['@svgr/webpack'],
+    })
+
+    return config
+  },
 }
 
 module.exports = nextConfig

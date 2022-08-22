@@ -4,7 +4,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
-
 body{font-family: 'Inter', sans-serif;}
 
 .abtimg span {width:100% !important;}
@@ -16,3 +15,19 @@ body{font-family: 'Inter', sans-serif;}
 
 .w3-light-grey,.w3-hover-light-grey:hover,.w3-light-gray,.w3-hover-light-gray:hover{color:#000!important;background-color:#f1f1f1!important}
 .w3-blue,.w3-hover-blue:hover{color:#fff!important;background-color:#2196F3!important}
+
+.text-blue-400{color: #2C93ED;}
+.bg-blue-400{ background-color: #2C93ED;}
+.bg-green-300{background: #5B9149;}
+.text-green-300{color: #5B9149;}
+.bg-green-500{background: #29481E;}
+.text-green-500{color: #29481E;}
+
+.blog-content h1{font-weight: 600;font-size: 36px;line-height: 44px;color:#000; margin-bottom: 26px;}
+.blog-content h2{font-weight: 600;font-size: 36px;line-height: 44px;color:#000; margin-bottom: 26px;}
+.blog-content h3{font-weight: 600;font-size: 28px;line-height: 34px;color:#000; margin-bottom: 20px;}
+.blog-content h4{font-weight: 600;font-size: 24px;line-height: 30px;color:#000; margin-bottom: 20px;}
+.blog-content p{font-weight: 400;font-size: 16px;line-height: 28px;color: #2B2D42;margin-bottom: 20px;}
+.blog-content p.mb-0{margin-bottom: 0;}
+.blog-content ul{margin:0 0 20px 0;padding: 0 0 0 15px;}
+.blog-content ul li{list-style-type: disc;font-weight: 400;font-size: 16px;line-height: 28px;color: #2B2D42; }
