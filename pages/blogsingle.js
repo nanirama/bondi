@@ -17,7 +17,7 @@ export default function BlogSingle() {
                     </li>
                     <li aria-current="page">
                         <div className="flex items-center">
-                            <svg className="w-4 h-4" fill="#29481E" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd"></path></svg>
+                            <svg className="w-4 h-4" fill="#29481E" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd"></path></svg>
                             <span className="text-sm font-medium text-green-500">Blog</span>
                         </div>
                     </li>
